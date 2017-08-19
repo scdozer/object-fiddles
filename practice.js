@@ -5,7 +5,10 @@
 
   //Code here
 
-
+var me = {
+  name : 'Scott',
+  age : '30'
+}
 
 
 
@@ -19,7 +22,14 @@
 
   //Code here
 
-
+var favoriteThings = {
+  band : 'Black Sabbath',
+  food : 'mexican',
+  person : 'Dad',
+  book : 'In Search of Captain Zero',
+  movie : 'City of God',
+  holiday : 'Thanksgiving'
+}
 
 
 
@@ -29,7 +39,8 @@
 
   //Code here
 
-
+favoriteThings['car'] = 'Subaru';
+favoriteThings['brand'] = 'No Name';
 
 
 
@@ -37,7 +48,8 @@
 
   //Code here
 
-
+favoriteThings['food'] = 'Chicken Nuggets';
+favoriteThings['book'] = 'Harry Potter';
 
 
 
@@ -45,17 +57,22 @@
 
 
 
-/* 
+/*
 Create an empty Object called backPack. Now, create a variable called 'item'
 and set it equal to the string 'firstPocket'. Using bracket notation,
 add a 'firstPocket' key (or property) to backPack, using 'item'.
 Set the value of that key to 'chapstick'.
 
 Using dot notation, add another key (or property) to your backPack object
-that is named color, with the value being the color of your backpack. 
+that is named color, with the value being the color of your backpack.
 */
 
   //Code here
+
+  var backPack = {};
+  var item = 'firstPocket';
+  backPack[item] = 'chapstick';
+  backPack.color = 'black';
 
 
 
@@ -66,16 +83,18 @@ that is named color, with the value being the color of your backpack.
 
   //Code here
 
- 
+alert(backPack);
+
 
 /*
 You probably noticed that it just alerted [object Object].
 Alerting to see the data in your Object doesn't work so well.
-Instead, console.log your whole backPack object and then check out the console. 
+Instead, console.log your whole backPack object and then check out the console.
 */
 
   //Code here
 
+console.log(backPack);
 
 
 
@@ -126,7 +145,7 @@ var user2 = {
 /*
 Now add two methods (functions that are properties on objects) to your methodCollection
 object. One called 'alertHello' which alerts 'hello' and another method called logHello
- which logs 'hello' to the console. 
+ which logs 'hello' to the console.
  */
 
   //Code Here
@@ -159,7 +178,7 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 
 
 
-  
+
 
 
 //NEXT PROBLEM
@@ -169,5 +188,3 @@ object. One called 'alertHello' which alerts 'hello' and another method called l
 // Create a function called makeCard which takes in cardNumber, expirationDate, and securityCode to make a Credit Card object and returns that object so that whenever you invoke makeCard, you get a brand new credit card.
 
   //Code Here
-
-
